@@ -1,5 +1,6 @@
 import { MessageCircle, Mail, Shield, Truck, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
+import heroImage from "@/assets/hero-pharma.jpg";
 
 const Hero = () => {
   const whatsappNumber = "2348012345678"; // Replace with actual number
@@ -14,13 +15,19 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
-      <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary/10 rounded-full blur-3xl" />
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Pharmaceutical logistics and healthcare professionals with medicine delivery truck"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
+      </div>
 
       <div className="container-max section-padding relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl text-left">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8 animate-fade-up">
             <Shield className="w-4 h-4" />
