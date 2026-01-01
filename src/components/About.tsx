@@ -42,7 +42,7 @@ const About = () => {
             {/* Trust points */}
             <div className="mt-8 grid grid-cols-2 gap-4">
               {[
-                "NAFDAC Compliant",
+                "PCN Compliant",
                 "Cold Chain Logistics",
                 "Same-Day Delivery",
                 "24/7 Support",
