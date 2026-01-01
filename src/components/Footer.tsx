@@ -1,4 +1,5 @@
 import { Pill, MessageCircle, Facebook, Instagram, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,6 +19,7 @@ const Footer = () => {
     { label: "About Us", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Contact", href: "#contact" },
+    { label: "Terms & Conditions", href: "/terms", isRoute: true },
   ];
 
   return (
@@ -61,12 +63,21 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-background/70 hover:text-primary transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
+                  {link.isRoute ? (
+                    <Link
+                      to={link.href}
+                      className="text-background/70 hover:text-primary transition-colors duration-200"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-background/70 hover:text-primary transition-colors duration-200"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -98,8 +109,7 @@ const Footer = () => {
             © {currentYear} Pharmaconnect. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-background/60">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+            <Link to="/terms" className="hover:text-primary transition-colors">Terms & Conditions</Link>
           </div>
         </div>
       </div>
