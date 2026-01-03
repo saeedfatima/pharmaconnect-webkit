@@ -109,6 +109,7 @@ const Footer = () => {
             © {currentYear} Pharmaconnect. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-background/60">
+            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-primary transition-colors">Terms & Conditions</Link>
           </div>
         </div>
