@@ -166,6 +166,90 @@ Create or update `.htaccess` in your `public_html` folder:
 | Styles missing | Clear browser cache; check CSS file paths |
 | CORS errors | Contact hosting support to enable CORS headers |
 
+### Addon Domain Deployment (Existing Hosting)
+
+If you already have a working server and want to host this project on an **addon domain**:
+
+#### Step 1: Add the Addon Domain in cPanel
+
+1. Log in to your cPanel account
+2. Go to **Domains** → **Addon Domains** (or just **Domains** in newer cPanel versions)
+3. Enter your new domain name (e.g., `zyp-pharma.com`)
+4. The document root will auto-fill (e.g., `/home/username/zyp-pharma.com`)
+5. Click **Add Domain**
+
+> **Note:** Make sure your domain's nameservers point to your hosting provider before adding it.
+
+#### Step 2: Configure DNS for Your Addon Domain
+
+At your domain registrar (where you bought the domain):
+
+1. Set nameservers to your hosting provider's nameservers, OR
+2. Add an **A Record** pointing to your server's IP address:
+   - Type: `A`
+   - Name: `@` (root domain)
+   - Value: Your server IP (find this in cPanel → **Server Information**)
+3. Add another **A Record** for `www`:
+   - Type: `A`
+   - Name: `www`
+   - Value: Same server IP
+
+#### Step 3: Build and Upload
+
+```bash
+# Build locally
+npm run build
+```
+
+Upload the contents of `dist/` folder to your addon domain's document root:
+- Using **File Manager**: Navigate to `/home/username/zyp-pharma.com/` and upload all files
+- Using **FTP**: Connect and upload to the addon domain folder
+
+#### Step 4: Add .htaccess
+
+Create `.htaccess` in the addon domain root (`/home/username/zyp-pharma.com/.htaccess`):
+
+```apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Handle client-side routing
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Enable GZIP compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+  AddOutputFilterByType DEFLATE application/javascript text/javascript
+</IfModule>
+```
+
+#### Step 5: SSL Certificate
+
+1. In cPanel, go to **SSL/TLS** → **Manage SSL Sites** or use **AutoSSL**
+2. Select your addon domain and install the certificate
+3. Add HTTPS redirect to `.htaccess`:
+
+```apache
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```
+
+#### Verification Checklist
+
+- [ ] Domain added as addon domain in cPanel
+- [ ] DNS A records point to server IP
+- [ ] `dist/` contents uploaded to addon domain folder
+- [ ] `.htaccess` file present in addon domain root
+- [ ] SSL certificate installed
+- [ ] Site loads at `https://yourdomain.com`
+- [ ] Page refresh works on all routes (SPA routing)
+
+---
+
 ### Subdomain Deployment
 
 To deploy on a subdomain (e.g., `app.yourdomain.com`):
