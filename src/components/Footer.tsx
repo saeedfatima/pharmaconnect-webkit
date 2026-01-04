@@ -1,17 +1,18 @@
-import { Pill, MessageCircle, Facebook, Instagram, Twitter } from "lucide-react";
+import { Truck, MessageCircle, Facebook, Instagram, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoImage from "@/assets/IMG-20260103-WA0009.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
-  const whatsappNumber = "2347089119235"; // Replace with actual number
-  const whatsappLink = `https://wa.me/${+2347089119235}?text=${encodeURIComponent("Hello Pharmaconnect, I would like to place an order.")}`;
+  const whatsappNumber = "2347089119235";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hello ZypDelivery, I would like to request a delivery.")}`;
 
   const socialLinks = [
     { icon: MessageCircle, href: whatsappLink, label: "WhatsApp", color: "hover:bg-[#25D366]" },
-    { icon: Facebook, href: "https://facebook.com/pharmaconnect", label: "Facebook", color: "hover:bg-[#1877F2]" },
-    { icon: Instagram, href: "https://instagram.com/pharmaconnect", label: "Instagram", color: "hover:bg-[#E4405F]" },
-    { icon: Twitter, href: "https://twitter.com/pharmaconnect", label: "Twitter/X", color: "hover:bg-foreground" },
+    { icon: Facebook, href: "https://facebook.com/zypdelivery", label: "Facebook", color: "hover:bg-[#1877F2]" },
+    { icon: Instagram, href: "https://instagram.com/zypdelivery", label: "Instagram", color: "hover:bg-[#E4405F]" },
+    { icon: Twitter, href: "https://twitter.com/zypdelivery", label: "Twitter/X", color: "hover:bg-foreground" },
   ];
 
   const quickLinks = [
@@ -29,17 +30,16 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#home" className="flex items-center gap-2 mb-4 group">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <Pill className="w-6 h-6 text-primary-foreground" />
-                <img src="/src/assets/IMG-20260103-WA0009.jpg" alt="" />
+              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center overflow-hidden">
+                <img src={logoImage} alt="ZypDelivery Logo" className="w-full h-full object-cover" />
               </div>
               <span className="text-xl font-bold text-background">
-                Pharma<span className="text-primary">connect</span>
+                Zyp<span className="text-primary">Delivery</span>
               </span>
             </a>
             <p className="text-background/70 mb-6 max-w-md">
-              Your trusted partner for pharmaceutical supply and logistics in Kano State. 
-              Connecting healthcare facilities to verified suppliers with fast, reliable delivery.
+              Your trusted partner for logistics and delivery services in Kano State. 
+              Connecting Dan Gauro New Market vendors to customers with fast, reliable delivery.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
@@ -90,7 +90,7 @@ const Footer = () => {
             <ul className="space-y-3 text-background/70">
               <li>
                 <a href="tel:+2347089119235" className="hover:text-primary transition-colors">
-                  +234 7089119235
+                  +234 708 911 9235
                 </a>
               </li>
               <li>
@@ -98,7 +98,7 @@ const Footer = () => {
                   info@zypdelivery.com
                 </a>
               </li>
-              <li>Kano State, Nigeria</li>
+              <li>Dan Gauro New Market, Kano State</li>
               <li>Mon - Sat: 8AM - 6PM</li>
             </ul>
           </div>
@@ -107,7 +107,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm text-center md:text-left">
-            © {currentYear} Pharmaconnect. All rights reserved.
+            © {currentYear} ZypDelivery. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-background/60">
             <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>

@@ -30,8 +30,8 @@ const DeliveryBanner = () => {
               Swift Delivery Across Kano State
             </h2>
             <p className="text-lg text-primary-foreground/90 mb-8 max-w-lg">
-              Our dedicated fleet of delivery riders ensures your pharmaceutical products reach you 
-              safely and on time. From urgent medical supplies to bulk orders, we've got you covered.
+              Our dedicated fleet of delivery riders ensures your packages reach their destination 
+              safely and on time. From small parcels to bulk orders, we've got you covered.
             </p>
 
             {/* Highlights Grid */}

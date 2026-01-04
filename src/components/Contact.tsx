@@ -2,8 +2,8 @@ import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Contact = () => {
-  const whatsappNumber = "234 7089119235"; // Replace with actual number
-  const whatsappMessage = encodeURIComponent("Hello Zyp delivery, I would like to place an order.");
+  const whatsappNumber = "2347089119235";
+  const whatsappMessage = encodeURIComponent("Hello ZypDelivery, I would like to request a delivery.");
   const email = "info@zypdelivery.com";
   const phone = "+234 708 911 9235";
 
@@ -23,7 +23,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Kano State, Nigeria",
+      value: "Dan Gauro New Market, Kano State",
       href: "#",
     },
     {
@@ -44,12 +44,12 @@ const Contact = () => {
               Contact Us
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Ready to Place an{" "}
-              <span className="text-primary">Order?</span>
+              Ready to Request a{" "}
+              <span className="text-primary">Delivery?</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Get in touch with us today. We're here to help you access quality 
-              pharmaceutical products quickly and reliably.
+              Get in touch with us today. We're here to help you deliver your 
+              packages quickly and reliably across Kano State.
             </p>
 
             {/* Contact Cards */}
@@ -84,15 +84,15 @@ const Contact = () => {
                 <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
                   <MessageCircle className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold">Order via WhatsApp</h3>
+                <h3 className="text-2xl font-bold">Request via WhatsApp</h3>
               </div>
               <p className="text-white/90 mb-6">
-                Chat with us directly on WhatsApp for quick responses and easy ordering. 
-                Send your requirements and get instant quotes.
+                Chat with us directly on WhatsApp for quick responses and easy delivery requests. 
+                Send your pickup and delivery details and get instant quotes.
               </p>
               <Button variant="whatsapp" size="xl" className="w-full bg-white text-[#25D366] hover:bg-white/90" asChild>
                 <a
-                  href={`https://wa.me/${+2347089119235}?text=${whatsappMessage}`}
+                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -111,11 +111,11 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold">Send an Email</h3>
               </div>
               <p className="text-primary-foreground/90 mb-6">
-                Prefer email? Send us your detailed requirements and we'll 
+                Prefer email? Send us your delivery requirements and we'll 
                 get back to you with a comprehensive quote.
               </p>
               <Button variant="email" size="xl" className="w-full bg-white text-primary hover:bg-white/90" asChild>
-                <a href={`mailto:${email}?subject=Order Inquiry&body=Hello Pharmaconnect,%0A%0AI would like to inquire about...`}>
+                <a href={`mailto:${email}?subject=Delivery Inquiry&body=Hello ZypDelivery,%0A%0AI would like to request a delivery...`}>
                   <Mail className="w-6 h-6" />
                   Send Email Now
                 </a>
