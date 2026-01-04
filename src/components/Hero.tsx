@@ -3,9 +3,9 @@ import { Button } from "./ui/button";
 import heroImage from "@/assets/hero-pharma.jpg";
 
 const Hero = () => {
-  const whatsappNumber = "2348012345678"; // Replace with actual number
-  const whatsappMessage = encodeURIComponent("Hello Pharmaconnect, I would like to place an order.");
-  const email = "orders@pharmaconnect.ng";
+  const whatsappNumber = "2347089119235"; // Replace with actual number
+  const whatsappMessage = encodeURIComponent("Hello zyp delivery, I would like to place an order.");
+  const email = "info@zypdelivery.com";
 
   const features = [
     { icon: Shield, text: "Verified Suppliers" },

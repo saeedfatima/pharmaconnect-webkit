@@ -2,10 +2,10 @@ import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Contact = () => {
-  const whatsappNumber = "2348012345678"; // Replace with actual number
-  const whatsappMessage = encodeURIComponent("Hello Pharmaconnect, I would like to place an order.");
-  const email = "orders@pharmaconnect.ng";
-  const phone = "+234 801 234 5678";
+  const whatsappNumber = "234 7089119235"; // Replace with actual number
+  const whatsappMessage = encodeURIComponent("Hello Zyp delivery, I would like to place an order.");
+  const email = "info@zypdelivery.com";
+  const phone = "+234 708 911 9235";
 
   const contactInfo = [
     {
@@ -92,7 +92,7 @@ const Contact = () => {
               </p>
               <Button variant="whatsapp" size="xl" className="w-full bg-white text-[#25D366] hover:bg-white/90" asChild>
                 <a
-                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+                  href={`https://wa.me/${+2347089119235}?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

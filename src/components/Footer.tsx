@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
-  const whatsappNumber = "2348012345678";
-  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  const whatsappNumber = "2347089119235"; // Replace with actual number
+  const whatsappLink = `https://wa.me/${+2347089119235}?text=${encodeURIComponent("Hello Pharmaconnect, I would like to place an order.")}`;
 
   const socialLinks = [
     { icon: MessageCircle, href: whatsappLink, label: "WhatsApp", color: "hover:bg-[#25D366]" },
@@ -31,6 +31,7 @@ const Footer = () => {
             <a href="#home" className="flex items-center gap-2 mb-4 group">
               <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
                 <Pill className="w-6 h-6 text-primary-foreground" />
+                <img src="/src/assets/IMG-20260103-WA0009.jpg" alt="" />
               </div>
               <span className="text-xl font-bold text-background">
                 Pharma<span className="text-primary">connect</span>
@@ -88,13 +89,13 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4">Contact</h4>
             <ul className="space-y-3 text-background/70">
               <li>
-                <a href="tel:+2348012345678" className="hover:text-primary transition-colors">
-                  +234 801 234 5678
+                <a href="tel:+2347089119235" className="hover:text-primary transition-colors">
+                  +234 7089119235
                 </a>
               </li>
               <li>
-                <a href="mailto:orders@pharmaconnect.ng" className="hover:text-primary transition-colors">
-                  orders@pharmaconnect.ng
+                <a href="mailto:info@zypdelivery.com" className="hover:text-primary transition-colors">
+                  info@zypdelivery.com
                 </a>
               </li>
               <li>Kano State, Nigeria</li>

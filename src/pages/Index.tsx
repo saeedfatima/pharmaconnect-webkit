@@ -18,7 +18,7 @@ const Index = () => {
           content="Pharmaconnect connects hospitals, pharmacies, and medicine stores to verified pharmaceutical suppliers with fast, reliable delivery across Kano State, Nigeria." 
         />
         <meta name="keywords" content="pharmaceutical supply, medicine logistics, drug delivery, Kano State, Nigeria, hospital pharmacy, wholesale medicine" />
-        <link rel="canonical" href="https://pharmaconnect.ng" />
+        <link rel="canonical" href="https://zypdelivery.com" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Pharmaconnect - Pharmaceutical Supply & Logistics" />
@@ -31,9 +31,9 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Pharmaconnect",
+            "name": "Zyp delivery",
             "description": "Pharmaceutical supply and logistics company in Kano State, Nigeria",
-            "url": "https://pharmaconnect.ng",
+            "url": "https://zypdelivery.com",
             "telephone": "+234-801-234-5678",
             "email": "orders@pharmaconnect.ng",
             "address": {
