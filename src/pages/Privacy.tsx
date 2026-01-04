@@ -7,8 +7,8 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | Pharmaconnect - Pharmaceutical Supply Kano</title>
-        <meta name="description" content="Privacy Policy for Pharmaconnect pharmaceutical supply and logistics services in Kano State, Nigeria." />
+        <title>Privacy Policy | ZypDelivery - Logistics & Delivery Kano</title>
+        <meta name="description" content="Privacy Policy for ZypDelivery logistics and delivery services in Kano State, Nigeria." />
       </Helmet>
       
       <Navbar />
@@ -28,7 +28,7 @@ const Privacy = () => {
                 Privacy Policy
               </h1>
               <p className="text-lg text-muted-foreground">
-                Last updated: January 2025
+                Last updated: January 2026
               </p>
             </div>
           </div>
@@ -42,9 +42,9 @@ const Privacy = () => {
               {/* Introduction */}
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Pharmaconnect ("we," "our," or "us") is committed to protecting your privacy. 
+                  ZypDelivery ("we," "our," or "us") is committed to protecting your privacy. 
                   This Privacy Policy explains how we collect, use, disclose, and safeguard your 
-                  information when you use our pharmaceutical supply and logistics services in Kano State, Nigeria.
+                  information when you use our logistics and delivery services in Kano State, Nigeria.
                 </p>
               </div>
 
@@ -59,15 +59,11 @@ const Privacy = () => {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">Personal Information</h3>
-                    <p className="text-muted-foreground mb-3">When you engage our services, we may collect:</p>
+                    <p className="text-muted-foreground mb-3">When you use our services, we may collect:</p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                        Business name and registration details
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                        Contact person name and position
+                        Your name and contact details
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
@@ -75,23 +71,23 @@ const Privacy = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                        Business address and delivery locations
+                        Pickup and delivery addresses
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                        PCN registration and license numbers
+                        Package details and descriptions
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                        CAC registration documents
+                        Payment information
                       </li>
                     </ul>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">Transaction Information</h3>
                     <p className="text-muted-foreground">
-                      We maintain records of orders, deliveries, payment transactions, and communications 
-                      related to our services for business and regulatory compliance purposes.
+                      We maintain records of deliveries, payment transactions, and communications 
+                      related to our services for business and customer service purposes.
                     </p>
                   </div>
                 </div>
@@ -107,13 +103,13 @@ const Privacy = () => {
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
-                    "Process and fulfill pharmaceutical orders",
-                    "Coordinate delivery and logistics services",
-                    "Verify PCN compliance and licensing status",
-                    "Communicate about orders and services",
+                    "Process and complete deliveries",
+                    "Coordinate pickup and drop-off logistics",
+                    "Communicate about your deliveries",
+                    "Provide delivery status updates",
                     "Maintain accurate business records",
-                    "Comply with Nigerian pharmaceutical regulations",
-                    "Improve our services and customer experience",
+                    "Improve our services",
+                    "Handle customer inquiries and complaints",
                     "Prevent fraud and ensure security",
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
@@ -140,16 +136,12 @@ const Privacy = () => {
                 <div className="space-y-4">
                   {[
                     {
-                      title: "Verified Suppliers",
-                      desc: "To fulfill your pharmaceutical orders with our network of verified suppliers."
+                      title: "Delivery Partners",
+                      desc: "To coordinate safe and timely delivery of your packages."
                     },
                     {
-                      title: "Logistics Partners",
-                      desc: "To coordinate safe and timely delivery of pharmaceutical products."
-                    },
-                    {
-                      title: "Regulatory Bodies",
-                      desc: "When required by PCN, NAFDAC, or other Nigerian regulatory authorities."
+                      title: "Recipients",
+                      desc: "Basic sender information shared with package recipients as needed."
                     },
                     {
                       title: "Legal Requirements",
@@ -173,12 +165,12 @@ const Privacy = () => {
                   <h2 className="text-2xl font-bold text-foreground">Data Security</h2>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  We implement appropriate technical and organizational measures to protect your information:
+                  We implement appropriate measures to protect your information:
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                    Secure storage of business and compliance documents
+                    Secure storage of customer information
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
@@ -190,7 +182,7 @@ const Privacy = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                    Secure communication channels for sensitive information
+                    Secure communication channels
                   </li>
                 </ul>
               </div>
@@ -199,9 +191,9 @@ const Privacy = () => {
               <div className="bg-muted/30 rounded-2xl p-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">Data Retention</h2>
                 <p className="text-muted-foreground">
-                  We retain your information for as long as necessary to provide our services and comply 
-                  with Nigerian pharmaceutical regulations. Transaction records and compliance documentation 
-                  may be retained for the period required by applicable laws and regulatory requirements.
+                  We retain your information for as long as necessary to provide our services and 
+                  handle any disputes or inquiries. Transaction records may be retained for the 
+                  period required by applicable laws.
                 </p>
               </div>
 
@@ -209,7 +201,7 @@ const Privacy = () => {
               <div className="bg-card rounded-2xl p-8 border border-border">
                 <h2 className="text-2xl font-bold text-foreground mb-4">Your Rights</h2>
                 <p className="text-muted-foreground mb-4">
-                  Subject to applicable Nigerian law, you have the right to:
+                  You have the right to:
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -226,7 +218,7 @@ const Privacy = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Withdraw consent for marketing communications
+                    Opt out of marketing communications
                   </li>
                 </ul>
               </div>
@@ -243,9 +235,9 @@ const Privacy = () => {
                   If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:
                 </p>
                 <div className="space-y-2 text-muted-foreground">
-                  <p><strong className="text-foreground">Email:</strong> privacy@pharmaconnect.ng</p>
-                  <p><strong className="text-foreground">Phone:</strong> +234 801 234 5678</p>
-                  <p><strong className="text-foreground">Address:</strong> Kano State, Nigeria</p>
+                  <p><strong className="text-foreground">Email:</strong> info@zypdelivery.com</p>
+                  <p><strong className="text-foreground">Phone:</strong> +234 708 911 9235</p>
+                  <p><strong className="text-foreground">Address:</strong> Dan Gauro New Market, Kano State, Nigeria</p>
                 </div>
               </div>
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Menu, X, Pill } from "lucide-react";
+import { Menu, X, Truck } from "lucide-react";
 import { Button } from "./ui/button";
+import logoImage from "@/assets/IMG-20260103-WA0009.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,12 +19,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <Pill className="w-6 h-6 text-primary-foreground" />
-              <img src="/src/assets/IMG-20260103-WA0009.jpg" alt="" />
+            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110 overflow-hidden">
+              <img src={logoImage} alt="ZypDelivery Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-xl font-bold text-foreground">
-              Pharma<span className="text-primary">connect</span>
+              Zyp<span className="text-primary">Delivery</span>
             </span>
           </a>
 

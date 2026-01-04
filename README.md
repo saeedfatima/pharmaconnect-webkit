@@ -1,6 +1,6 @@
-# ZYP - Pharmaceutical Supply & Logistics
+# ZypDelivery - Logistics & Delivery Services
 
-A modern pharmaceutical supply and logistics platform connecting hospitals, pharmacies, and medicine stores to verified pharmaceutical suppliers with fast, reliable delivery in Kano State, Nigeria.
+A modern logistics and delivery platform connecting vendors from Dan Gauro New Market to customers across Kano State, Nigeria with fast, reliable delivery services.
 
 ## Tech Stack
 
@@ -95,11 +95,11 @@ This creates a `dist/` folder containing all production-ready files.
 
 1. In cPanel, go to **Git™ Version Control**
 2. Click **Create** and enter your repository URL
-3. Set the repository path (e.g., `/home/username/repositories/zyp`)
+3. Set the repository path (e.g., `/home/username/repositories/zypdelivery`)
 4. After cloning, use **Terminal** or SSH to:
 
 ```bash
-cd ~/repositories/zyp
+cd ~/repositories/zypdelivery
 npm install
 npm run build
 cp -r dist/* ~/public_html/
@@ -174,8 +174,8 @@ If you already have a working server and want to host this project on an **addon
 
 1. Log in to your cPanel account
 2. Go to **Domains** → **Addon Domains** (or just **Domains** in newer cPanel versions)
-3. Enter your new domain name (e.g., `zyp-pharma.com`)
-4. The document root will auto-fill (e.g., `/home/username/zyp-pharma.com`)
+3. Enter your new domain name (e.g., `zypdelivery.com`)
+4. The document root will auto-fill (e.g., `/home/username/zypdelivery.com`)
 5. Click **Add Domain**
 
 > **Note:** Make sure your domain's nameservers point to your hosting provider before adding it.
@@ -202,12 +202,12 @@ npm run build
 ```
 
 Upload the contents of `dist/` folder to your addon domain's document root:
-- Using **File Manager**: Navigate to `/home/username/zyp-pharma.com/` and upload all files
+- Using **File Manager**: Navigate to `/home/username/zypdelivery.com/` and upload all files
 - Using **FTP**: Connect and upload to the addon domain folder
 
 #### Step 4: Add .htaccess
 
-Create `.htaccess` in the addon domain root (`/home/username/zyp-pharma.com/.htaccess`):
+Create `.htaccess` in the addon domain root (`/home/username/zypdelivery.com/.htaccess`):
 
 ```apache
 <IfModule mod_rewrite.c>
@@ -277,4 +277,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 ## Contact
 
-For support or inquiries about ZYP pharmaceutical delivery services, contact us through the website contact form.
+For support or inquiries about ZypDelivery services, contact us:
+- **Email**: info@zypdelivery.com
+- **Phone**: +234 708 911 9235
+- **Location**: Dan Gauro New Market, Kano State, Nigeria

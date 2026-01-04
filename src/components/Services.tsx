@@ -1,27 +1,27 @@
-import { Pill, Truck, Package, Clock, Shield, Headphones } from "lucide-react";
+import { Package, Truck, Store, Clock, Shield, Headphones } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Pill,
-      title: "Pharmaceutical Supply",
+      icon: Package,
+      title: "Parcel Delivery",
       description:
-        "Access verified, quality-assured medicines for hospitals, clinics, pharmacies, and medicine stores. All products are sourced from NAFDAC-approved suppliers.",
-      features: ["Verified Suppliers", "Quality Assured", "Wide Range"],
+        "Fast and secure delivery of parcels and packages from Dan Gauro New Market to any location in Kano State. We handle your goods with care.",
+      features: ["Same-Day Option", "Secure Handling", "All Sizes"],
     },
     {
       icon: Truck,
-      title: "Logistics & Delivery",
+      title: "Bulk Logistics",
       description:
-        "Fast dispatch, scheduled delivery, and safe handling of temperature-sensitive medicines. We ensure your orders arrive intact and on time.",
-      features: ["Same-Day Delivery", "Cold Chain", "GPS Tracking"],
+        "Need to move larger quantities? Our bulk delivery service handles wholesale orders and large shipments efficiently and cost-effectively.",
+      features: ["Wholesale Orders", "Scheduled Pickup", "Fleet Available"],
     },
     {
-      icon: Package,
-      title: "Wholesale Support",
+      icon: Store,
+      title: "Vendor Support",
       description:
-        "Helping healthcare facilities avoid stock-outs with consistent supply and competitive wholesale pricing. Build reliable inventory management.",
-      features: ["Bulk Orders", "Stock Management", "Best Prices"],
+        "Dedicated delivery solutions for market vendors. We help you reach your customers faster with reliable pickup and delivery services.",
+      features: ["Daily Pickups", "Multiple Drops", "Best Rates"],
     },
   ];
 
@@ -40,12 +40,12 @@ const Services = () => {
             Our Services
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Complete Pharmaceutical{" "}
+            Complete Delivery{" "}
             <span className="text-primary">Solutions</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            From sourcing to delivery, we provide end-to-end pharmaceutical 
-            supply chain solutions tailored to your needs.
+            From pickup to delivery, we provide end-to-end logistics 
+            solutions tailored to your business needs.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ const Services = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-center md:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
-                Why Choose Pharmaconnect?
+                Why Choose ZypDelivery?
               </h3>
               <p className="text-primary-foreground/80">
                 We go beyond delivery to ensure your complete satisfaction.

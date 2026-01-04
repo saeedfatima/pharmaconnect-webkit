@@ -3,14 +3,14 @@ import { Button } from "./ui/button";
 import heroImage from "@/assets/hero-pharma.jpg";
 
 const Hero = () => {
-  const whatsappNumber = "2347089119235"; // Replace with actual number
-  const whatsappMessage = encodeURIComponent("Hello zyp delivery, I would like to place an order.");
+  const whatsappNumber = "2347089119235";
+  const whatsappMessage = encodeURIComponent("Hello ZypDelivery, I would like to request a delivery.");
   const email = "info@zypdelivery.com";
 
   const features = [
-    { icon: Shield, text: "Verified Suppliers" },
+    { icon: Shield, text: "Trusted Service" },
     { icon: Truck, text: "Fast Delivery" },
-    { icon: CheckCircle, text: "Quality Assured" },
+    { icon: CheckCircle, text: "Safe Handling" },
   ];
 
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Pharmaceutical logistics and healthcare professionals with medicine delivery truck"
+          alt="Logistics and delivery services with delivery truck"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
@@ -30,21 +30,21 @@ const Hero = () => {
         <div className="max-w-3xl text-left">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8 animate-fade-up">
-            <Shield className="w-4 h-4" />
-            Trusted Pharmaceutical Partner in Kano State
+            <Truck className="w-4 h-4" />
+            Trusted Delivery Partner in Kano State
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-tight mb-6 animate-fade-up delay-100">
-            Reliable Pharmaceutical{" "}
-            <span className="gradient-text">Supply & Logistics</span>{" "}
+            Fast & Reliable{" "}
+            <span className="gradient-text">Logistics & Delivery</span>{" "}
             in Kano State
           </h1>
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-            Pharmaconnect connects hospitals, pharmacies, and medicine stores to verified 
-            pharmaceutical suppliers with fast, reliable delivery across Kano State.
+            ZypDelivery connects vendors and businesses from Dan Gauro New Market to customers 
+            across Kano State with fast, reliable, and secure delivery services.
           </p>
 
           {/* CTA Buttons */}
@@ -56,11 +56,11 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <MessageCircle className="w-6 h-6" />
-                Order via WhatsApp
+                Request Delivery
               </a>
             </Button>
             <Button variant="email" size="xl" asChild>
-              <a href={`mailto:${email}?subject=Order Inquiry`}>
+              <a href={`mailto:${email}?subject=Delivery Inquiry`}>
                 <Mail className="w-6 h-6" />
                 Send an Email
               </a>

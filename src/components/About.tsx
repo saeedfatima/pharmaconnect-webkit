@@ -1,9 +1,9 @@
-import { Heart, Users, Award, MapPin } from "lucide-react";
+import { Package, Users, Award, MapPin } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Heart, value: "500+", label: "Healthcare Partners" },
-    { icon: Users, value: "50+", label: "Verified Suppliers" },
+    { icon: Package, value: "1000+", label: "Deliveries Completed" },
+    { icon: Users, value: "500+", label: "Happy Customers" },
     { icon: Award, value: "5+", label: "Years Experience" },
     { icon: MapPin, value: "100%", label: "Kano Coverage" },
   ];
@@ -18,32 +18,32 @@ const About = () => {
               About Us
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Improving Medicine Access Across{" "}
-              <span className="text-primary">Kano State</span>
+              Connecting Dan Gauro Market to{" "}
+              <span className="text-primary">All of Kano State</span>
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg">
               <p>
-                Pharmaconnect is dedicated to bridging the gap between healthcare 
-                facilities and reliable pharmaceutical suppliers. We understand that 
-                timely access to quality medicines can save lives.
+                ZypDelivery is dedicated to bridging the gap between vendors at 
+                Dan Gauro New Market and customers across Kano State. We understand that 
+                timely and reliable delivery is essential for business success.
               </p>
               <p>
-                Our network of verified suppliers ensures that every medication 
-                meets the highest standards of quality and compliance. From urban 
-                hospitals to rural clinics, we deliver with speed and care.
+                Our network of trusted riders ensures that every package is handled 
+                with care and delivered on time. From small parcels to bulk orders, 
+                we deliver with speed and reliability.
               </p>
               <p>
-                With years of experience in pharmaceutical distribution, we've 
-                built a reputation for trust, reliability, and exceptional service 
-                throughout Kano State.
+                With years of experience in logistics and delivery, we've built a 
+                reputation for trust, reliability, and exceptional service throughout 
+                Kano State.
               </p>
             </div>
 
             {/* Trust points */}
             <div className="mt-8 grid grid-cols-2 gap-4">
               {[
-                "PCN Compliant",
-                "Cold Chain Logistics",
+                "Secure Handling",
+                "Real-Time Tracking",
                 "Same-Day Delivery",
                 "24/7 Support",
               ].map((point, index) => (

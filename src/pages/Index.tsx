@@ -12,17 +12,17 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Pharmaconnect - Reliable Pharmaceutical Supply & Logistics in Kano State, Nigeria</title>
+        <title>ZypDelivery - Reliable Logistics & Delivery Services in Kano State, Nigeria</title>
         <meta 
           name="description" 
-          content="Pharmaconnect connects hospitals, pharmacies, and medicine stores to verified pharmaceutical suppliers with fast, reliable delivery across Kano State, Nigeria." 
+          content="ZypDelivery connects vendors from Dan Gauro New Market to customers across Kano State with fast, reliable, and secure delivery services." 
         />
-        <meta name="keywords" content="pharmaceutical supply, medicine logistics, drug delivery, Kano State, Nigeria, hospital pharmacy, wholesale medicine" />
+        <meta name="keywords" content="delivery services, logistics, Kano State, Nigeria, Dan Gauro Market, package delivery, courier service" />
         <link rel="canonical" href="https://zypdelivery.com" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Pharmaconnect - Pharmaceutical Supply & Logistics" />
-        <meta property="og:description" content="Your trusted partner for pharmaceutical supply and logistics in Kano State, Nigeria." />
+        <meta property="og:title" content="ZypDelivery - Logistics & Delivery Services" />
+        <meta property="og:description" content="Your trusted partner for logistics and delivery in Kano State, Nigeria." />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_NG" />
         
@@ -31,13 +31,14 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Zyp delivery",
-            "description": "Pharmaceutical supply and logistics company in Kano State, Nigeria",
+            "name": "ZypDelivery",
+            "description": "Logistics and delivery services company in Kano State, Nigeria",
             "url": "https://zypdelivery.com",
-            "telephone": "+234-801-234-5678",
-            "email": "orders@pharmaconnect.ng",
+            "telephone": "+234-708-911-9235",
+            "email": "info@zypdelivery.com",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Dan Gauro New Market",
               "addressRegion": "Kano State",
               "addressCountry": "Nigeria"
             },
@@ -45,7 +46,7 @@ const Index = () => {
               "@type": "State",
               "name": "Kano State"
             },
-            "serviceType": ["Pharmaceutical Supply", "Medicine Logistics", "Wholesale Pharmacy"]
+            "serviceType": ["Parcel Delivery", "Logistics", "Courier Services"]
           })}
         </script>
       </Helmet>
