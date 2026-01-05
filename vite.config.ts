@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   // Important for root-domain deployment
-  base: "/",
+  base: "/zypdelivery.com/",
 
   server: {
     host: true, // safer than "::" on some systems
